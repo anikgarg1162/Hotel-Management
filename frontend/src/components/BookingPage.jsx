@@ -29,7 +29,7 @@ const BookingPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-       await axios.post( 'http://localhost:5000/BookingForm' , formData);
+       await axios.post( 'https://hotel-management-dngq.onrender.com/BookingForm' , formData);
       console.log('Reservation updated:', formData);
       
       setFormData({
