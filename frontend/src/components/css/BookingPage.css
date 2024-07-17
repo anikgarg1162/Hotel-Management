@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+  }
+  
+  .reservation-form {
+    width: 700px; /* Increased width */
+    padding: 20px; /* Reduced padding to decrease height */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow-y: auto; /* To handle overflow */
+    max-height: 90vh; /* Ensure the form doesn't exceed viewport height */
+  }
+  
+  .reservation-form h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .reservation-form p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .reservation-form .form-group {
+    margin-bottom: 15px; /* Reduced margin to decrease overall height */
+    text-align: left;
+  }
+  
+  .reservation-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .reservation-form input[type="text"],
+  .reservation-form input[type="tel"],
+  .reservation-form input[type="date"],
+  .reservation-form input[type="time"],
+  .reservation-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .reservation-form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px; /* Reduced margin to decrease overall height */
+  }
+  
+  .reservation-form .cancel-btn,
+  .reservation-form .update-btn {
+    width: 48%;
+    padding: 10px;
+    background: #6e8efb;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .reservation-form .cancel-btn:hover,
+  .reservation-form .update-btn:hover {
+    background: #577dce;
+  }
+  

@@ -1,0 +1,235 @@
+/* HomePage.css */
+
+/* General styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: none;
+  }
+  
+  /* Header styles */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header stays above other content */
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 0;
+    padding-top: 0%;
+  }
+  .navbar {
+    display: grid;
+    grid-template-columns: 0.2fr 1.4fr 0.4fr .5fr;
+    align-items: center;
+    color: white;
+  }
+  
+  .navbar-logo img {
+    height: 50px;
+    margin-left: 10px;
+  }
+  .welcome{
+    font-size: 40px;
+    color: black;
+  }
+  .navbar-heading h1 {
+    margin-left: 300px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 50px;
+    color: rgb(255, 254, 254);
+    align-items: center;
+  }
+  
+  .navbar-actions {
+    gap: 10px;
+    margin: 10px;
+    
+  }
+  .signUp{
+    display: flex;
+    flex-direction: row;
+    right: 10px;
+    width: 100%;
+    left: 0%;
+  }
+  
+  /* Button styles */
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #b88b0ef5;
+    color: rgb(219, 238, 9);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #bb7410;
+  }
+  
+  /* Hero section styles */
+  /* .hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 800px;
+    padding-top: 20px; */
+     /* Adjust to account for fixed header */
+  /* } */
+  
+  .hero-image {
+    width: 100%;
+    height: 120%;
+    overflow: hidden;
+  }
+  
+  .hero-image img {
+    width: 150%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+
+  .heroproject {
+    background-image: url('../hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: white;
+  }
+  
+  /* Footer styles */
+  #footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #292929;
+    color: white;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    justify-content: space-around;
+  }
+  p{
+    color: white;
+  }
+  .links{
+    font-size: 12px;
+  }
+  .fa-x-twitter{
+    color: black;
+  }
+  .fa-instagram{
+    background: rgb(249,206,52);background: linear-gradient(90deg, rgba(249,206,52,1) 0%, rgba(238,42,123,1) 50%, rgba(98,40,215,1) 100%); color: white;border-radius: 15%;padding-left: 1px;padding-right: 1px;
+  }
+  .fa-facebook{
+    color: #1877F2;
+  }
+  .social{
+    font-size: 25px;
+    margin: 5px;
+    align-content: center;
+  }
+  #about {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .about-container {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .about-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font: 17px;
+    word-wrap: normal;
+  }
+  .footer-column {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .footer-column h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column p {
+    margin: 5px 0;
+  }
+  
+  .footer-column ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .footer-column a:hover {
+    text-decoration-line: underline;
+  }
+  .topic{
+    align-content: normal;
+    color: red;
+  }
+ 
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-actions {
+      margin-top: 10px;
+    }
+  
+    .footer-container {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      justify-content: space-around;
+    }
+
+    .footer-column h4{
+      color: #0056b3;
+       font-weight: bold; 
+       font-size: 25px;
+    }
+    .footer-bottom p{
+      margin-left: 50px; 
+      color: black;
+    }
+}

@@ -1,0 +1,34 @@
+.housekeeping-details {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f900;
+  }
+  
+  .housekeeping-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .housekeeping-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .housekeeping-details table th,
+  .housekeeping-details table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .housekeeping-details table th {
+    background-color: #f2f2f2;
+  }
+  
+  .housekeeping-details p {
+    margin-top: 15px;
+  }
+  

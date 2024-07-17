@@ -1,0 +1,39 @@
+.view-feedbacks {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-feedbacks h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.view-feedbacks table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.view-feedbacks th,
+.view-feedbacks td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.view-feedbacks th {
+  background-color: #f2f2f2;
+}
+
+.view-feedbacks tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.view-feedbacks p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+}

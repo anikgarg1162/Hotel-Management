@@ -1,24 +1,31 @@
 const express = require('express');
-const connectwithdb = require('./db');
-const Salary = require('./model/salary.model');
-
+const SignupRoutes = require("./Routes/SignupRoutes");
+const FeedbackRoutes = require("./Routes/FeedbackRoutes");
+const HousekeepRoutes = require("./Routes/HousekeepRoutes");
+const BookingRoutes = require('./Routes/BookingRoutes');
+const AiRoutes = require('./Routes/AiRoutes');
 const app = express();
-connectwithdb();
+const bodyparser = require("body-parser");
+require('./Connection/conn')
+const cors = require('cors');
 
+
+app.use(cors());
 app.get('/', (req, res) => {
-    res.send('Hello backend');
-});
+    res.send("working perfect")
+})
 
-app.get('/mysalary', async (req, res) => {
-    try {
-        const msalary = await salary.find();
-        console.log(msalary);
-        res.json(msalary);
-    } catch (error) {
-        res.status(500).send('Error fetching salary details');
-    }
-});
+app.use(bodyparser.urlencoded({ extended: true }))
+app.use(bodyparser.json())
 
-app.listen(3000, () => {
-    console.log('App is listening on port number 3000');
-});
+app.use(SignupRoutes);
+app.use(FeedbackRoutes);
+app.use(HousekeepRoutes);
+app.use(BookingRoutes);
+app.use(AiRoutes);
+app.listen(5000, () => {
+    console.log("server is running")
+})
+
+
+

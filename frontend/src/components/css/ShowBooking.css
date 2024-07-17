@@ -1,0 +1,40 @@
+.reservation-list {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reservation-list h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .reservation-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .reservation-list th,
+  .reservation-list td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .reservation-list th {
+    background-color: #f2f2f2;
+  }
+  
+  .reservation-list tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .reservation-list p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #666;
+  }
+  

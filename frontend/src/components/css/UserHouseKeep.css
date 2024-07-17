@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+.housekeeping-form {
+  width: 400px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.housekeeping-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.housekeeping-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.housekeeping-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.housekeeping-form input[type="text"],
+.housekeeping-form input[type="date"],
+.housekeeping-form input[type="time"],
+.housekeeping-form select,
+.housekeeping-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.housekeeping-form textarea {
+  resize: none;
+}
+
+.housekeeping-form .form-buttons {
+  text-align: center;
+}
+
+.housekeeping-form .form-buttons button {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin: 10px 5px;
+  background: #6e8efb;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.housekeeping-form .form-buttons .cancel-btn {
+  background: #f44336;
+}
+
+.housekeeping-form .form-buttons button:hover {
+  background: #577dce;
+}
+
+.housekeeping-form .form-buttons .cancel-btn:hover {
+  background: #d32f2f;
+}

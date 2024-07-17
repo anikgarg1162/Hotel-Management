@@ -1,0 +1,273 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navOptions{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1f;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header styles */
+.header {
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  padding-top: 0%;
+  background-color: rgba(169, 169, 169, 0);
+}
+.options {
+  width: 60%;
+  /* background-color: #4a5423; */
+  background-color:  rgba(221, 230, 221, 0);
+  list-style-type: none;
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content:
+  center;text-align:
+  center;padding-left:
+  20%;padding-right: 20%;
+}
+.options .navbar-actions {
+  display: inline;
+  flex: auto;
+}
+.options .navbar-actions .btn{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn{
+  width: 100%;
+  background-color: rgba(244, 244, 242, 0);
+  font-size: 20px;
+  border-radius: 2px;
+}
+.navbar-logo img {
+  height: 40px; /* Adjust the size as necessary */
+}
+
+.profile-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.9f 0.1f;
+  background-color: green;
+  align-items: center;
+}
+.profile-icon {
+  width: 30px;
+  align-self: center;
+  display: flex;
+  position: relative;
+  right: -70px;
+  height: 30px;
+  background-color: white;
+  color: white;
+  border-radius: 50%;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  right: 70px;
+  background-color: rgba(244, 244, 244, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.dropdown-menu button {
+  padding: 5px 10px;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* Hero section styles */
+.userffunction_hero {
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F9%2F94%2FResort_Hotel_Olivean_Shodoshima_Japan05n.jpg&f=1&nofb=1&ipt=6615c8cb596d7d48a3e8a30b1ea481e772d30d23b136bb6bb8ea23385dda7acd&ipo=images');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  color: white;
+}
+
+.userffunction_hero h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #0056b3;
+  padding-top: 20%;
+}
+
+/* Image gallery styles */
+.gallery-container {
+  padding: 0rem;
+}
+
+.gallery {
+  background-color: rgb(228, 229, 229);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery a {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.image-details {
+  padding: 1rem;
+  text-align: center;
+}
+
+.image-details h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.image-details p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer styles */
+#footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #292929;
+  color: white;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  justify-content: space-around;
+}
+p{
+  color: white;
+}
+#about {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.about-container {
+  width: 100%;
+  text-align: center;
+}
+
+.about-container h2 {
+  margin-bottom: 20px;
+  color: #0056b3;
+}
+
+.about-container p {
+  font: 17px;
+  word-wrap: normal;
+}
+.footer-column {
+  margin-left: 200px;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  margin: 5px 0;
+}
+
+.footer-column ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-column a:hover {
+  text-decoration-line: underline;
+}
+.topic{
+  align-content: normal;
+  color: rgba(115, 0, 255, 0.486);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-actions {
+    margin-top: 10px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    justify-content: space-around;
+  }
+
+  .footer-column h4{
+    color: #0056b3;
+     font-weight: bold; 
+     font-size: 25px;
+  }
+  .footer-bottom p{
+    margin-left: 50px; 
+    color: black;
+  }
+}
