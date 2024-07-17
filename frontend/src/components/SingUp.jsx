@@ -27,7 +27,7 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-       await axios.post('http://localhost:5000/SignupUser', formData);
+       await axios.post('https://hotel-management-dngq.onrender.com/SignupUser', formData);
       console.log('Registration successful:', formData);
       setFormData({
         email: '',
