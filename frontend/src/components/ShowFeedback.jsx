@@ -9,7 +9,7 @@ const ViewFeedbacks = () => {
   useEffect(() => {
     const fetchFeedbacks = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/ShowFeedback');
+        const response = await axios.get('https://hotel-management-dngq.onrender.com/ShowFeedback');
         console.log(response.data);
         setFeedbacks(response.data);
       } catch (error) {
