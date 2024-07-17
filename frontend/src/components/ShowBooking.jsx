@@ -9,7 +9,7 @@ const ReservationList = () => {
   useEffect(() => {
     const fetchReservations = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/ShowBooking');
+        const response = await axios.get('https://hotel-management-dngq.onrender.com/ShowBooking');
         console.log(response);
         setReservations(response.data);
         setError(null);
