@@ -52,7 +52,7 @@ const Feedback = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/FeedbackForm', formData);
+      await axios.post('https://hotel-management-dngq.onrender.com/FeedbackForm', formData);
       console.log('Feedback submitted successfully:', formData);
       alert('Feedback submitted');
       setFormData({  // Reset form data after successful submission
