@@ -12,7 +12,7 @@ function LoginPage() {
     event.preventDefault();
     
     try {
-      const response = await fetch('http://localhost:5000/UserLogin', {
+      const response = await fetch('https://hotel-management-dngq.onrender.com/UserLogin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
