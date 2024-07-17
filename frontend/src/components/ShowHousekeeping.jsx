@@ -9,7 +9,7 @@ const HousekeepingDetails = () => {
   useEffect(() => {
     const fetchHousekeepingDetails = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/ShowHousekeeping');
+        const response = await axios.get('https://hotel-management-dngq.onrender.com/ShowHousekeeping');
         console.log(response.data);
         setHousekeepingDetails(response.data);
         setError(null);
