@@ -33,7 +33,7 @@ const UserHousekeep = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/HousekeepForm', formData);
+      await axios.post('https://hotel-management-dngq.onrender.com/HousekeepForm', formData);
      console.log('Housekeeping updated:', formData);
      alert('Housekeeping updated');
      setFormData({
