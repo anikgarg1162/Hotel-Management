@@ -22,7 +22,7 @@ function Userfunctions({ userName }) {
   };
 
   const handlesignout= () => {
-    Navigate('/login');
+    Navigate('/');
   };
 
   const [showDropdown, setShowDropdown] = useState(false);
