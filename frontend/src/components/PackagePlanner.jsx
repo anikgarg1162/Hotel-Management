@@ -25,7 +25,7 @@ const App = () => {
     `;
 
     try {
-      const response = await axios.post('http://localhost:5000/planner', { prompt });
+      const response = await axios.post('https://hotel-management-dngq.onrender.com/planner', { prompt });
       setGeneratedText(response.data.text);
     } catch (error) {
       console.error('Error generating content:', error);
