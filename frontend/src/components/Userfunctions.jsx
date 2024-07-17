@@ -21,6 +21,10 @@ function Userfunctions({ userName }) {
     Navigate('/Planner');
   };
 
+  const handlesignout= () => {
+    Navigate('/');
+  };
+
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleProfileClick = () => {
@@ -79,7 +83,7 @@ function Userfunctions({ userName }) {
         </div>
         {showDropdown && (
           <div className="dropdown-menu">
-            <button >Sign Out</button>
+            <button onClick={handlesignout}>Sign Out</button>
           </div>
         )}
       </container> 
