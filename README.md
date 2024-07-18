@@ -1,1 +1,1 @@
-http://hotel-management-weld.vercel.app
+http://hotel-management-4lgr.vercel.app
